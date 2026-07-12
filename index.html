@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio Saya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi Wawa Alfiasari Devi Putri.">
+  <title>Wawa Alfiasari Devi Putri | Portofolio</title>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Halo, Saya Wais!</h1>
-    <p>Selamat datang di website portfolio saya.</p>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <!-- Ganti teks brand di bawah ini dengan nama singkat atau inisial Anda. -->
+      <a class="brand" href="#top" aria-label="Kembali ke beranda">Wawa</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Buka menu navigasi</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-section">
+          <p class="eyebrow">Personal Portfolio</p>
+          <!-- Ganti nama dan tagline profesional di bawah ini sesuai profil Anda. -->
+          <h1>Wawa Alfiasari Devi Putri</h1>
+          <p class="hero-tagline">Front-End Developer yang membangun pengalaman digital modern, responsif, dan mudah digunakan.</p>
+          <div class="hero-actions" aria-label="Tautan utama">
+            <a class="btn btn-primary" href="#portofolio">Lihat Karya</a>
+            <a class="btn btn-secondary" href="#kontak">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-photo fade-section" aria-label="Foto profil">
+          <!-- Ganti src gambar placeholder ini dengan file foto Anda, misalnya assets/foto-profil.jpg. -->
+          <img src="assets/profile-placeholder.svg" alt="Placeholder foto profil Wawa Alfiasari Devi Putri">
+        </div>
+      </div>
+    </section>
+
+    <section class="section about fade-section" id="tentang">
+      <div class="container about-grid">
+        <div class="about-image">
+          <!-- Ganti avatar placeholder ini dengan foto atau ilustrasi yang mewakili diri Anda. -->
+          <img src="assets/about-avatar.svg" alt="Avatar placeholder untuk section Tentang Saya">
+        </div>
+
+        <div class="section-copy">
+          <p class="eyebrow">Tentang Saya</p>
+          <h2>Menggabungkan desain yang rapi dengan kode yang terstruktur.</h2>
+          <!-- Ubah paragraf berikut agar sesuai latar belakang, minat, dan keahlian Anda. -->
+          <p>Saya adalah pengembang web yang tertarik pada antarmuka bersih, performa ringan, dan pengalaman pengguna yang terasa natural. Saya terbiasa bekerja dengan HTML, CSS, JavaScript, desain responsif, serta alur kerja kreatif untuk membangun website yang jelas, elegan, dan fungsional.</p>
+          <div class="skills" aria-label="Keahlian">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio fade-section" id="portofolio">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Portofolio</p>
+          <h2>Proyek Pilihan</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <!-- Ganti gambar pratinjau proyek dengan screenshot proyek Anda sendiri. -->
+            <img src="assets/project-dashboard.svg" alt="Pratinjau proyek dashboard analitik">
+            <div class="project-content">
+              <h3>Dashboard Analitik</h3>
+              <p>Antarmuka dashboard responsif untuk memantau data penjualan, statistik pengguna, dan ringkasan performa.</p>
+              <a href="#kontak" aria-label="Diskusikan proyek Dashboard Analitik">Diskusikan proyek</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <!-- Ganti gambar pratinjau proyek dengan screenshot proyek Anda sendiri. -->
+            <img src="assets/project-branding.svg" alt="Pratinjau proyek website brand kreatif">
+            <div class="project-content">
+              <h3>Website Brand Kreatif</h3>
+              <p>Landing page gelap modern dengan visual kuat, layout editorial, dan call-to-action yang menonjol.</p>
+              <a href="#kontak" aria-label="Diskusikan proyek Website Brand Kreatif">Diskusikan proyek</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <!-- Ganti gambar pratinjau proyek dengan screenshot proyek Anda sendiri. -->
+            <img src="assets/project-mobile.svg" alt="Pratinjau proyek aplikasi mobile">
+            <div class="project-content">
+              <h3>UI Aplikasi Mobile</h3>
+              <p>Konsep antarmuka aplikasi produktivitas dengan komponen yang konsisten dan pengalaman mobile-first.</p>
+              <a href="#kontak" aria-label="Diskusikan proyek UI Aplikasi Mobile">Diskusikan proyek</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact fade-section" id="kontak">
+      <div class="container contact-grid">
+        <div class="section-copy">
+          <p class="eyebrow">Kontak</p>
+          <h2>Mari mulai percakapan.</h2>
+          <p>Kirim pesan untuk kolaborasi, freelance project, atau diskusi ide website yang ingin kamu bangun.</p>
+          <!-- Ganti alamat email dan username Instagram di bawah ini dengan kontak aktif Anda. -->
+          <div class="contact-links">
+            <a href="mailto:wawa@example.com">wawa@example.com</a>
+            <a href="https://www.instagram.com/username" target="_blank" rel="noreferrer">@username</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Ganti tahun atau nama footer jika diperlukan. -->
+      <p>&copy; 2026 Wawa Alfiasari Devi Putri. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
