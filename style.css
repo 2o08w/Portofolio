@@ -497,37 +497,3 @@ text-align:center;
 }
 
 }
-.hero-grid{
-display:flex;
-flex-direction:column;
-text-align:center;
-gap:30px;
-}
-
-.hero-photo{
-order:1;
-max-width:250px;
-margin:0 auto;
-}
-
-.hero-copy{
-order:2;
-}
-
-.hero-tagline{
-max-width:100%;
-margin:20px auto;
-}
-
-.hero-actions{
-justify-content:center;
-}
-
-h1{
-font-size:3rem;
-line-height:1.1;
-}
-
-/* SAMPAI SINI */
-
-}
