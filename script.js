@@ -2,8 +2,6 @@ const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const fadeSections = document.querySelectorAll(".fade-section");
-const contactForm = document.querySelector("#contact-form");
-const formStatus = document.querySelector("#form-status");
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
@@ -40,25 +38,3 @@ if ("IntersectionObserver" in window) {
 } else {
   fadeSections.forEach((section) => section.classList.add("is-visible"));
 }
-
-contactForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(contactForm);
-  const name = String(formData.get("name") || "").trim();
-  const email = String(formData.get("email") || "").trim();
-  const message = String(formData.get("message") || "").trim();
-
-  if (!name || !email || !message) {
-    formStatus.textContent = "Mohon lengkapi nama, email, dan pesan.";
-    return;
-  }
-
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    formStatus.textContent = "Format email belum valid.";
-    return;
-  }
-
-  formStatus.textContent = "Terima kasih, pesan Anda sudah siap dikirim.";
-  contactForm.reset();
-});
