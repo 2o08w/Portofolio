@@ -428,6 +428,20 @@ align-items:stretch;
   border-color: var(--accent);
 }
 
+.contact-item h3{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.2rem;
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.contact-item h3 i{
+    color:var(--accent);
+    font-size:1.35rem;
+}
+
 /* Kotak QR Code */
 .qr-code{
 display:block;
