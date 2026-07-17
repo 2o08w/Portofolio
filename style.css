@@ -365,84 +365,53 @@ h3 {
   text-align:center;
 }
 
-.contact h2{
-  color:#fff;
-  margin-bottom:18px;
+/* Judul bagian Kontak */
+.contact h2 {
+  color: var(--accent); /* pakai warna aksen biru konsisten */
+  margin-bottom: 16px;
 }
 
-.contact p{
-  color:#b8c3cf;
-  font-size:17px;
-  line-height:1.8;
+/* Teks pendukung di bawah judul */
+.contact p {
+  color: var(--muted); /* warna teks lembut/abu-abu */
+  line-height: 1.6;
 }
 
-.contact strong{
-  color:#fff;
+/* Link kontak (WhatsApp, Instagram, dll) */
+.contact a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.contact a:hover,
+.contact a:focus-visible {
+  color: var(--accent-strong); /* warna aksen kuat untuk hover/fokus */
+}
+/* Kartu informasi kontak */
+.contact-item {
+  background: var(--bg-contact);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.contact-item:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
 }
 
-.contact-links{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:35px;
-  margin:55px 0;
-}
-
-.contact-item{
-  background:#1a2430;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:18px;
-  padding:35px 28px;
-  text-align:center;
-  box-shadow:0 20px 45px rgba(0,0,0,.35);
-  transition:.3s ease;
-}
-
-.contact-item:hover{
-  transform:translateY(-8px);
-  border-color:var(--accent);
-}
-
-.contact-item h3{
-  margin:0 0 20px;
-  color:#fff;
-  font-size:1.35rem;
-  font-weight:700;
-}
-
-.contact-item p{
-  color:#aeb7c2;
-  margin-top:15px;
-  font-size:.96rem;
-}
-
-.contact-item small{
-  display:block;
-  margin-top:10px;
-  color:#7f8b97;
-}
-
-.contact-item a{
-  display:inline-block;
-  margin-top:12px;
-  color:var(--accent);
-  font-weight:700;
-  font-size:1rem;
-  transition:.25s;
-}
-
-.contact-item a:hover{
-  color:var(--accent-strong);
-}
-
-.qr-code{
-  width:180px;
-  height:180px;
-  object-fit:contain;
-  background:#fff;
-  padding:16px;
-  border-radius:18px;
-  margin:20px auto;
-  box-shadow:0 15px 40px rgba(0,0,0,.35);
+/* Kotak QR Code */
+.qr-code {
+  background: var(--bg-contact);
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.1),
+              0 15px 40px rgba(0,0,0,0.35);
+  border-radius: 18px;
+  padding: 16px;
+  width: 180px;
+  height: 180px;
+  margin: auto;
 }
 
 .closing-text{
@@ -477,23 +446,24 @@ h3 {
    RESPONSIVE
 =========================== */
 
-@media(max-width:768px){
-
-.contact-links{
-grid-template-columns:1fr;
-}
-
-.contact-item{
-padding:28px 22px;
-}
-
-.qr-code{
-width:160px;
-height:160px;
-}
-
-.closing-text{
-text-align:center;
-}
-
+/* Responsif (layar ≤ 768px) */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+  .contact-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-item {
+    padding: 22px;
+  }
+  .qr-code {
+    width: 150px;
+    height: 150px;
+  }
+  .contact h2 {
+    text-align: center;
+  }
 }
