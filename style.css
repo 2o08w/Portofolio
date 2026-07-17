@@ -365,9 +365,18 @@ h3 {
   text-align:center;
 }
 
+.contact .eyebrow{
+    color:#49BDF9;
+    font-size:.82rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    margin-bottom:12px;
+}
+
 /* Judul bagian Kontak */
 .contact h2 {
-  color: var(--accent); /* pakai warna aksen biru konsisten */
+  color:#ffffff;
   margin-bottom: 16px;
 }
 
