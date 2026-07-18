@@ -260,15 +260,20 @@ h3 {
   align-items: center;
   gap: 56px;
 }
-.about-image {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--bg-card);
-  box-shadow: var(--shadow);
+.about-image{
+    width:min(430px,100%);
+    justify-self:center;
+
+    overflow:hidden;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:var(--bg-card);
+    box-shadow:var(--shadow);
 }
-.about-image img {
-  width: 100%;
+
+.about-image img{
+    width:100%;
+    display:block;
 }
 
 .section-copy p:not(.eyebrow) {
