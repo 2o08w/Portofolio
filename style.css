@@ -75,10 +75,6 @@ a {
   font-size: 1.2rem;
   font-weight: 800;
 }
-.brand::after {
-  content: ".";
-  color: var(--accent);
-}
 
 .nav-menu {
   display: flex;
